@@ -3,9 +3,9 @@
 class MPendaftar extends CI_Model
 {
   public $nama;
-  public $prodi;
-  public $fakultas;
-  public $no_hp;
+  public $departemen;
+  public $jenis_kelamin;
+  public $no_pengurus;
   public $email;
   public $created_at;
   public $updated_at;
@@ -25,9 +25,9 @@ class MPendaftar extends CI_Model
   public function insert_entry()
   {
     $this->nama       = $_POST['nama'];
-    $this->prodi      = $_POST['prodi'];
-    $this->fakultas   = $_POST['fakultas'];
-    $this->no_hp       = $_POST['no_hp'];
+    $this->departemen      = $_POST['departemen'];
+    $this->jenis_kelamin   = $_POST['jenis_kelamin'];
+    $this->no_pengurus       = $_POST['no_pengurus'];
     $this->email      = $_POST['email'];
     $this->created_at = date('Y-m-d H:i:s');
     
@@ -39,9 +39,9 @@ class MPendaftar extends CI_Model
   public function update_entry()
   {
     $this->nama       = $_POST['nama'];
-    $this->prodi      = $_POST['prodi'];
-    $this->fakultas   = $_POST['fakultas'];
-    $this->no_hp       = $_POST['no_hp'];
+    $this->departemen      = $_POST['departemen'];
+    $this->jenis_kelamin   = $_POST['jenis_kelamin'];
+    $this->no_pengurus       = $_POST['no_pengurus'];
     $this->email      = $_POST['email'];
     $this->updated_at = date('Y-m-d H:i:s');
     

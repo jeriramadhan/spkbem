@@ -26,9 +26,9 @@
                           <!-- bikin paramater pendaftar yang lu mau masukkin -->
                             <th width="15" style="text-align:center">No</th>
                             <th width="250" style="text-align:center">Nama</th>
-                            <th width="150" style="text-align:center">Prodi</th>
-                            <th width="100" style="text-align:center">Fakultas</th>
-                            <th width="100" style="text-align:center">No Telp</th>
+                            <th width="150" style="text-align:center">Departemen</th>
+                            <th width="100" style="text-align:center">Jenis Kelamin</th>
+                            <th width="100" style="text-align:center">No Pengurus</th>
                             <th width="150" style="text-align:center">Email</th>
                             <th width="50" style="text-align:center">Action</th>
                         </tr>
@@ -38,9 +38,9 @@
                             echo '<tr>';
                             echo '<td style="text-align:center">' . ($k + 1) . '</td>';
                             echo '<td>' . $resdata->nama . '</td>';
-                            echo '<td style="text-align:center">' . $resdata->prodi . '</td>';
-                            echo '<td style="text-align:center">' . $resdata->fakultas . '</td>';
-                            echo '<td style="text-align:center">' . $resdata->no_hp . '</td>';
+                            echo '<td style="text-align:center">' . $resdata->departemen . '</td>';
+                            echo '<td style="text-align:center">' . $resdata->jenis_kelamin . '</td>';
+                            echo '<td style="text-align:center">' . $resdata->no_pengurus . '</td>';
                             echo '<td style="text-align:center">' . $resdata->email . '</td>';
                             echo '<td style="text-align:center">
                             <a href="' . site_url('menu/updatePendaftar/' . $resdata->id) . '" style="text-decoration:none;color:black" data-toggle="tooltip" title="Update"><i class="fa fa-pencil"></i></a>&nbsp;

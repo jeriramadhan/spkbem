@@ -30,29 +30,25 @@
                         <small>Penilaian</small>
                     </div>
                     <div class="form-group col-md-4">
-                        <label>Pengiriman CV </label>
-                        <input type="number" class="form-control" name="c1" value="<?= $data->c1 ?>" placeholder="Masukkan Pengiriman CV " required>
+                        <label>Penilaian 1 </label>
+                        <input type="number" class="form-control" name="c1" value="<?= $data->c1 ?>" placeholder="Masukkan Penilaian 1 " required>
                     </div>
 
                     <div class="form-group col-md-4">
-                        <label>Kehadiran Diseluruh Rangkaian Acara</label>
-                        <input type="number" class="form-control" name="c2" value="<?= $data->c2 ?>" placeholder="Masukkan Kehadiran Diseluruh Rangkaian Acara" required>
+                        <label>Penilaian 2 </label>
+                        <input type="number" class="form-control" name="c2" value="<?= $data->c2 ?>" placeholder="Masukkan Penilaian 2" required>
                     </div>
 
                     <div class="form-group col-md-4">
-                        <label>Pembuatan Script</label>
-                        <input type="number" class="form-control" name="c3" value="<?= $data->c3 ?>" placeholder="Masukkan Pembuatan Script" required>
+                        <label>Penilaian 3 </label>
+                        <input type="number" class="form-control" name="c3" value="<?= $data->c3 ?>" placeholder="Masukkan Penilaian 3" required>
                     </div>
 
                     <div class="form-group col-md-4">
-                        <label>Video Siaran</label>
-                        <input type="number" class="form-control" name="c4" value="<?= $data->c4 ?>" placeholder="Masukkan Video Siaran" required>
+                        <label>Penilaian 4</label>
+                        <input type="number" class="form-control" name="c4" value="<?= $data->c4 ?>" placeholder="Masukkan Penilaian 4" required>
                     </div>
 
-                    <div class="form-group col-md-4">
-                        <label>Kelengkapan Diary ORAKOM</label>
-                        <input type="number" class="form-control" name="c5" value="<?= $data->c5 ?>" placeholder="Masukkan Kelengkapan Diary ORAKOM" required>
-                    </div>
                 </div>
 
                 <div class="box-footer">

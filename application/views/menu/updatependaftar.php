@@ -26,16 +26,16 @@
                         </div>
                         <!-- ganti sesuai kolom -->
                         <div class="form-group col-md-4">
-                            <label>Prodi</label>
-                            <input type="text" class="form-control" name="prodi" value="<?= $data->prodi ?>" required>
+                            <label>Departemen</label>
+                            <input type="text" class="form-control" name="departemen" value="<?= $data->departemen ?>" required>
                         </div>
                         <div class="form-group col-md-4">
-                            <label>Fakultas</label>
-                            <input type="text" class="form-control" name="fakultas" value="<?= $data->fakultas ?>" required>
+                            <label>Jenis Kelamin</label>
+                            <input type="text" class="form-control" name="jenis_kelamin" value="<?= $data->jenis_kelamin ?>" required>
                         </div>
                         <div class="form-group col-md-4">
-                            <label>No Telp</label>
-                            <input type="text" class="form-control" name="no_hp" value="<?= $data->no_hp ?>" required>
+                            <label>No Pengurus</label>
+                            <input type="text" class="form-control" name="no_pengurus" value="<?= $data->no_pengurus ?>" required>
                         </div>
                         <div class="form-group col-md-4">
                             <label>Email</label>
