@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'db_spkbem',
+	'hostname' => 'pratoza.com',
+	'username' => 'u8961758_spkbem',
+	'password' => 'spkbem123',
+	'database' => 'u8961758_spkbem',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
