@@ -1,10 +1,10 @@
 <div class="content-wrapper">
     <section class="content-header">
         <h1>
-            Mahasiswa
+            Penilaian Staff
         </h1>
         <ol class="breadcrumb">
-            <li><a href="#">Mahasiswa</a></li>
+            <li><a href="#">Penilaian Staff</a></li>
             <li class="active">Create</li>
         </ol>
     </section>

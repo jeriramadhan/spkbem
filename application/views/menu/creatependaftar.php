@@ -1,10 +1,10 @@
 <div class="content-wrapper">
     <section class="content-header">
         <h1>
-            Pendaftaran Mahasiswa
+            Input Data Staff
         </h1>
         <ol class="breadcrumb">
-            <li><a href="#">Pendaftar</a></li>
+            <li><a href="#">Input Data Staff</a></li>
             <li class="active">Create</li>
         </ol>
     </section>
