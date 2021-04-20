@@ -37,8 +37,8 @@
                             <input type="text" class="form-control" name="no_pengurus" placeholder="Masukkan Pengurus" required>
                         </div>
                         <div class="form-group col-md-4">
-                            <label>Email</label>
-                            <input type="text" class="form-control" name="email" placeholder="Masukkan Email" required>
+                            <label>Angkatan</label>
+                            <input type="text" class="form-control" name="angkatan" placeholder="Masukkan angkatan" required>
                         </div>
                     </div>
                 </div>

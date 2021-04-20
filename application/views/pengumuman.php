@@ -86,7 +86,7 @@
                 <!-- <h3 class="box-title">Selamat Datang Calon Anggota Baru</h3> -->
                 <div class="content">
                     <h1 style="text-align:center">SISTEM PENDUKUNG KEPUTUSAN</h1>
-                    <h1 style="text-align:center">PENERIMAAN ANGGOTA BARU  BEMP PTIK UNJ</h1>
+                    <h1 style="text-align:center">PENILAIAN STAFF  BEMP PTIK UNJ</h1>
                     <br><br>
                     <h2 style="text-align:center"> HARAP MENUNGGU PENGUMUMAN</h2>
                     <br><br>
