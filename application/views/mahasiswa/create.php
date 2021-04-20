@@ -53,11 +53,6 @@
                         <input type="number" class="form-control" name="c4" placeholder="Masukkan Penilaian" required>
                     </div>
 
-                    <div class="form-group col-md-4">
-                        <label>Penilaian 5</label>
-                        <input type="number" class="form-control" name="c5" placeholder="Masukkan Penilaian" required>
-                    </div>
-
                 </div>
 
                 <div class="box-footer">

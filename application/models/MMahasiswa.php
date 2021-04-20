@@ -7,7 +7,6 @@ class MMahasiswa extends CI_Model
     public $c2;
     public $c3;
     public $c4;
-    public $c5;
     public $created_at;
     public $updated_at;
 
@@ -36,7 +35,6 @@ class MMahasiswa extends CI_Model
         $this->c2           = $_POST['c2'];
         $this->c3           = $_POST['c3'];
         $this->c4           = $_POST['c4'];
-        $this->c5           = $_POST['c5'];
         $this->created_at   = date('Y-m-d H:i:s');
 
         $this->db->trans_start();
@@ -51,7 +49,6 @@ class MMahasiswa extends CI_Model
         $this->c2           = $_POST['c2'];
         $this->c3           = $_POST['c3'];
         $this->c4           = $_POST['c4'];
-        $this->c5           = $_POST['c5'];
         $this->updated_at   = date('Y-m-d H:i:s');
 
         $this->db->trans_start();

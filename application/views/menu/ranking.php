@@ -24,7 +24,7 @@
                             <th style="text-align:center">C2</th>
                             <th style="text-align:center">C3</th>
                             <th style="text-align:center">C4</th>
-                            <th style="text-align:center">C5</th>
+                            <!-- <th style="text-align:center">C5</th> -->
                             <th style="text-align:center">Total</th>
                             <th style="text-align:center">Ranking</th>
                         </tr>
@@ -38,7 +38,7 @@
                             echo '<td style="text-align:center">' . $v['c2'] . '</td>';
                             echo '<td style="text-align:center">' . $v['c3'] . '</td>';
                             echo '<td style="text-align:center">' . $v['c4'] . '</td>';
-                            echo '<td style="text-align:center">' . $v['c5'] . '</td>';
+                            // echo '<td style="text-align:center">' . $v['c5'] . '</td>';
                             echo '<td style="text-align:center">' . $v['total'] . '</td>';
                             echo '<td style="text-align:center">' . $v['rank'] . '</td>';
                             echo '</tr>';
