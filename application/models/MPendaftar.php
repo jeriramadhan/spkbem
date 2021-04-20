@@ -6,7 +6,7 @@ class MPendaftar extends CI_Model
   public $departemen;
   public $jenis_kelamin;
   public $no_pengurus;
-  public $email;
+  public $angkatan;
   public $created_at;
   public $updated_at;
   
@@ -28,7 +28,7 @@ class MPendaftar extends CI_Model
     $this->departemen      = $_POST['departemen'];
     $this->jenis_kelamin   = $_POST['jenis_kelamin'];
     $this->no_pengurus       = $_POST['no_pengurus'];
-    $this->email      = $_POST['email'];
+    $this->angkatan      = $_POST['angkatan'];
     $this->created_at = date('Y-m-d H:i:s');
     
     $this->db->trans_start();
@@ -42,7 +42,7 @@ class MPendaftar extends CI_Model
     $this->departemen      = $_POST['departemen'];
     $this->jenis_kelamin   = $_POST['jenis_kelamin'];
     $this->no_pengurus       = $_POST['no_pengurus'];
-    $this->email      = $_POST['email'];
+    $this->angkatan      = $_POST['angkatan'];
     $this->updated_at = date('Y-m-d H:i:s');
     
     $this->db->trans_start();

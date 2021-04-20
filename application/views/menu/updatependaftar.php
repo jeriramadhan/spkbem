@@ -38,8 +38,8 @@
                             <input type="text" class="form-control" name="no_pengurus" value="<?= $data->no_pengurus ?>" required>
                         </div>
                         <div class="form-group col-md-4">
-                            <label>Email</label>
-                            <input type="text" class="form-control" name="email" value="<?= $data->email ?>" required>
+                            <label>Angkatan</label>
+                            <input type="text" class="form-control" name="angkatan" value="<?= $data->angkatan ?>" required>
                         </div>
                     </div>
                 </div>

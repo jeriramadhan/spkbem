@@ -29,7 +29,7 @@
                             <th width="150" style="text-align:center">Departemen</th>
                             <th width="100" style="text-align:center">Jenis Kelamin</th>
                             <th width="100" style="text-align:center">No Pengurus</th>
-                            <th width="150" style="text-align:center">Email</th>
+                            <th width="150" style="text-align:center">Angkatan</th>
                             <th width="50" style="text-align:center">Action</th>
                         </tr>
                     </thead>
@@ -41,7 +41,7 @@
                             echo '<td style="text-align:center">' . $resdata->departemen . '</td>';
                             echo '<td style="text-align:center">' . $resdata->jenis_kelamin . '</td>';
                             echo '<td style="text-align:center">' . $resdata->no_pengurus . '</td>';
-                            echo '<td style="text-align:center">' . $resdata->email . '</td>';
+                            echo '<td style="text-align:center">' . $resdata->angkatan . '</td>';
                             echo '<td style="text-align:center">
                             <a href="' . site_url('menu/updatePendaftar/' . $resdata->id) . '" style="text-decoration:none;color:black" data-toggle="tooltip" title="Update"><i class="fa fa-pencil"></i></a>&nbsp;
                             <a href="' . site_url('menu/deletePendaftar/' . $resdata->id) . '" style="text-decoration:none;color:black" data-toggle="tooltip" title="Delete"><i class="fa fa-trash"></i></a>';
