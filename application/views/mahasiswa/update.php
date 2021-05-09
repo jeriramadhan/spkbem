@@ -29,26 +29,14 @@
                         <hr />
                         <small>Penilaian</small>
                     </div>
-                    <div class="form-group col-md-4">
-                        <label>Penilaian 1 </label>
-                        <input type="number" class="form-control" name="c1" value="<?= $data->c1 ?>" placeholder="Masukkan Penilaian 1 " required>
-                    </div>
-
-                    <div class="form-group col-md-4">
-                        <label>Penilaian 2 </label>
-                        <input type="number" class="form-control" name="c2" value="<?= $data->c2 ?>" placeholder="Masukkan Penilaian 2" required>
-                    </div>
-
-                    <div class="form-group col-md-4">
-                        <label>Penilaian 3 </label>
-                        <input type="number" class="form-control" name="c3" value="<?= $data->c3 ?>" placeholder="Masukkan Penilaian 3" required>
-                    </div>
-
-                    <div class="form-group col-md-4">
-                        <label>Penilaian 4</label>
-                        <input type="number" class="form-control" name="c4" value="<?= $data->c4 ?>" placeholder="Masukkan Penilaian 4" required>
-                    </div>
-
+                    <?php foreach ($kriteria as $i => $d) { 
+                        $krit = $d->kriteria;?>
+                    
+                        <div class="form-group col-md-4">
+                            <label>C<?= $i + 1?>: <?= $d->keterangan?></label>
+                            <input type="text" class="form-control" name="c<?= $i + 1 ?>" value="<?= $data->$krit ?>" placeholder="Enter Nilai <?= $i + 1 ?>" required>
+                        </div>
+                    <?php } ?>
                 </div>
 
                 <div class="box-footer">

@@ -39,6 +39,7 @@
                             <?php } ?>
                             <th style="text-align:center">Total</th>
                             <th style="text-align:center">Ranking</th>
+                            <th style="text-align:center">Departemen</th>
                             <th style="text-align:center">Penilaian</th>
                         </tr>
                     </thead>
