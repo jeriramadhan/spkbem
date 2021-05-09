@@ -3,10 +3,10 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Pendaftar
+            Input Data Staf
         </h1>
         <ol class="breadcrumb">
-            <li><a href="#">Pendaftar</a></li>
+            <li><a href="#">Input Data Staf</a></li>
             <li class="active">Index</li>
         </ol>
     </section>

@@ -1,9 +1,9 @@
 <div class="content-wrapper">
     <section class="content-header">
         <h1 style="text-align:center">
-            Pengumuman <br>Staff Terbaik BEMP PTIK UNJ
+            Pengumuman <br>Staf Terbaik BEMP PTIK UNJ
         </h1>
-        <img src="<?= "https://yt3.ggpht.com/ytc/AAUvwnhFbgDmIOMUDgw1arSeUWk3t-Lkyou6WluvrmRRtA=s900-c-k-c0x00ffffff-no-rj" ?>"  class="center">
+        <img src="<?= base_url("assets/unnamed.jpg"); ?>"  class="center">
         <style>
         .center {
   display: block;
@@ -24,8 +24,8 @@
     <section class="content">
         <div class="box box-primary">
             <div class="box-header with-border">
-            <marquee>Pengumuman Staff Terbaik BEMP PTIK UNJ</marquee>
-                <!-- <h4>Pengumuman Staff Terbaik</h4> -->
+            <marquee>Pengumuman Staf Terbaik BEMP PTIK UNJ</marquee>
+                <!-- <h4>Pengumuman Staf Terbaik</h4> -->
             </div>
 
             <div class="box-body">
@@ -60,9 +60,9 @@
                               $datanilaibatas = $d->nilai_batas;
                             }
                             if($v['total'] >= $datanilaibatas){
-                              echo '<td style="text-align:center">Staff Kategori Baik</td>';
+                              echo '<td style="text-align:center">Staf Kategori Baik</td>';
                             } else{
-                              echo '<td style="text-align:center">Staff Dibawah Standar</td>';
+                              echo '<td style="text-align:center">Staf Dibawah Standar</td>';
                             }
                             echo '</tr>';
                         } ?>
@@ -86,7 +86,7 @@
                 <!-- <h3 class="box-title">Selamat Datang Calon Anggota Baru</h3> -->
                 <div class="content">
                     <h1 style="text-align:center">SISTEM PENDUKUNG KEPUTUSAN</h1>
-                    <h1 style="text-align:center">PENILAIAN STAFF  BEMP PTIK UNJ</h1>
+                    <h1 style="text-align:center">PENILAIAN Staf  BEMP PTIK UNJ</h1>
                     <br><br>
                     <h2 style="text-align:center"> HARAP MENUNGGU PENGUMUMAN</h2>
                     <br><br>

@@ -16,6 +16,12 @@ class MMahasiswa extends CI_Model
         return $query->result();
     }
 
+    public function get_kriteria()
+    {
+        $query = $this->db->get('kriteria');
+        return $query->result();
+    }
+
     public function get_entries_by_id($id)
     {
         $query = $this->db->get_where('mahasiswa', ['id' => $id]);
@@ -30,11 +36,18 @@ class MMahasiswa extends CI_Model
 
     public function insert_entry()
     {
+        
         $this->nama         = $_POST['nama'];
-        $this->c1           = $_POST['c1'];
-        $this->c2           = $_POST['c2'];
-        $this->c3           = $_POST['c3'];
-        $this->c4           = $_POST['c4'];
+        $data = $this->get_kriteria();
+        foreach ($data as $i => $d) { 
+            $kriteria = $d->kriteria;       
+            $this->$kriteria         = $_POST[$kriteria];
+        }
+        
+        // $this->c1           = $_POST['c1'];
+        // $this->c2           = $_POST['c2'];
+        // $this->c3           = $_POST['c3'];
+        // $this->c4           = $_POST['c4'];
         $this->created_at   = date('Y-m-d H:i:s');
 
         $this->db->trans_start();

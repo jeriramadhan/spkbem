@@ -31,6 +31,7 @@ class Mahasiswa extends CI_Controller
 			$this->m_mahasiswa->insert_entry();
 			redirect('mahasiswa');
 		}
+		$data['getKriteria'] = $this->m_kriteria->get_entries();
 		$data['getUser'] = $this->m_pendaftar->get_entries();
 		$this->load->view('layout/header');
 		$this->load->view('layout/sidebar');

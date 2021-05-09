@@ -1,10 +1,10 @@
 <div class="content-wrapper">
     <section class="content-header">
         <h1>
-            Input Data Staf
+            Input Kriteria Atribut
         </h1>
         <ol class="breadcrumb">
-            <li><a href="#">Input Data Staf</a></li>
+            <li><a href="#">Input Kriteria Atribut</a></li>
             <li class="active">Create</li>
         </ol>
     </section>

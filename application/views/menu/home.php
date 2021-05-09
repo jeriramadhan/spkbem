@@ -20,7 +20,7 @@
                 <h3 class="box-title">Selamat Datang Admin</h3>
                 <div class="content">
                     <h1 style="text-align:center">SISTEM PENDUKUNG KEPUTUSAN</h1>
-                    <h1 style="text-align:center">PENILAIAN STAFF  BEMP PTIK UNJ</h1>
+                    <h1 style="text-align:center">PENILAIAN Staf BEMP PTIK UNJ</h1>
                     <h3 style="text-align:center">- PSDM BEMP PTIK UNJ -</h3>
             </div>
 

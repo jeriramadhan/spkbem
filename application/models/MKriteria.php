@@ -30,15 +30,48 @@ class MKriteria extends CI_Model
         return $query->row();
     }
 
-    public function update_entry($id, $bobot)
-    {
-        $this->bobot        = $bobot;
-        $this->updated_at   = date('Y-m-d H:i:s');
+    public function insert_entry()
+  {
+    $this->kriteria       = $_POST['kriteria'];
+    $this->keterangan      = $_POST['keterangan'];
+    $this->tipe   = $_POST['tipe'];
+    $this->bobot       = $_POST['bobot'];
+    $this->created_at = date('Y-m-d H:i:s');
+    
+    $this->db->trans_start();
+    $this->db->insert('kriteria', $this);
+    $this->db->trans_complete();
+  }
+  
+  public function update_entry()
+  {
+    $this->kriteria       = $_POST['kriteria'];
+    $this->keterangan      = $_POST['keterangan'];
+    $this->tipe   = $_POST['tipe'];
+    $this->bobot       = $_POST['bobot'];
+    $this->updated_at = date('Y-m-d H:i:s');
+    
+    $this->db->trans_start();
+    $this->db->update('kriteria', $this, ['id' => $_POST['id']]);
+    $this->db->trans_complete();
+  }
+  
+  public function delete_entry($id)
+  {
+    $this->db->trans_start();
+    $this->db->delete('kriteria', ['id' => $id]);
+    $this->db->trans_complete();
+  }
 
-        $this->db->trans_start();
-        $this->db->update('kriteria', $this, ['id' => $id]);
-        $this->db->trans_complete();
-    }
+    // public function update_entry($id, $bobot)
+    // {
+    //     $this->bobot        = $bobot;
+    //     $this->updated_at   = date('Y-m-d H:i:s');
+
+    //     $this->db->trans_start();
+    //     $this->db->update('kriteria', $this, ['id' => $id]);
+    //     $this->db->trans_complete();
+    // }
 
     public function update_keterangan($id, $keterangan)
     {

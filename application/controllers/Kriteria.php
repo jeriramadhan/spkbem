@@ -30,6 +30,59 @@ class Kriteria extends CI_Controller
 		$this->load->view('layout/footer', ['js' => 'kriteria/indexjs']);
 	}
 
+	public function indexKriteria()
+	{
+		$data = $this->m_kriteria->get_entries();
+
+		if (!empty($_POST)) {
+			foreach ($data as $i => $d) {
+				$this->m_kriteria->update_entry($d->id, $_POST['c' . ($i + 1)]);
+			}
+			redirect('kriteria');
+		}
+
+		$this->load->view('layout/header');
+		$this->load->view('layout/sidebar');
+		$this->load->view('kriteria/indexKriteria', ['data' => $data]);
+		$this->load->view('layout/footer', ['js' => 'kriteria/indexjs']);
+	}
+
+
+	public function createKriteria()
+	{
+		if (!empty($_POST)) {
+			$this->m_kriteria->insert_entry();
+			redirect('kriteria/indexKriteria');
+		}
+
+		$this->load->view('layout/header');
+		$this->load->view('layout/sidebar');
+		$this->load->view('kriteria/createKriteria');
+		$this->load->view('layout/footer', ['js' => 'menu/createjs']);
+	}
+
+	public function updateKriteria($id)
+	{
+		if (!empty($_POST)) {
+			$this->m_kriteria->update_entry();
+			redirect('kriteria/indexKriteria');
+		}
+
+		$data = $this->m_kriteria->get_entries_by_id($id);
+		$this->load->view('layout/header');
+		$this->load->view('layout/sidebar');
+		$this->load->view('kriteria/updateKriteria', ['data' => $data]);
+		$this->load->view('layout/footer', ['js' => 'menu/updatejs']);
+	}
+
+	public function deleteKriteria($id)
+	{
+		$this->m_kriteria->delete_entry($id);
+		redirect('kriteria/indexKriteria');
+	}
+
+
+
 		public function keterangan()
 	{
 		$data = $this->m_kriteria->get_entries();
