@@ -89,7 +89,7 @@
     $datapengumuman = $this->m_kriteria->get_entries_status();
 		$this->load->view('layout/header-umum');
 		// $this->load->view('layout/sidebar');
-		$this->load->view('pengumuman', ['perhitungan_normalisasi' => $perhitungan_normalisasi, 'perhitungan_bobot' => $perhitungan_bobot, 'data' => $data, 'datapengumuman'=>$datapengumuman]);
+		$this->load->view('pengumuman', ['kriteria_count' => $kriteria, 'perhitungan_normalisasi' => $perhitungan_normalisasi, 'perhitungan_bobot' => $perhitungan_bobot, 'data' => $data, 'datapengumuman'=>$datapengumuman]);
 		$this->load->view('layout/footer', ['js' => 'menu/rankingjs']);
 	}
 
