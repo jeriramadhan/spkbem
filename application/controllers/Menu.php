@@ -128,7 +128,7 @@ class Menu extends CI_Controller
 
 		$this->load->view('layout/header');
 		$this->load->view('layout/sidebar');
-		$this->load->view('menu/ranking', ['perhitungan_normalisasi' => $perhitungan_normalisasi, 'perhitungan_bobot' => $perhitungan_bobot]);
+		$this->load->view('menu/ranking', ['kriteria_count'=>$kriteria,'perhitungan_normalisasi' => $perhitungan_normalisasi, 'perhitungan_bobot' => $perhitungan_bobot]);
 		$this->load->view('layout/footer', ['js' => 'menu/rankingjs']);
 	}
 
@@ -197,7 +197,7 @@ class Menu extends CI_Controller
 
 		$this->load->view('layout/header');
 		$this->load->view('layout/sidebar');
-		$this->load->view('menu/hasil', ['perhitungan_normalisasi' => $perhitungan_normalisasi, 'perhitungan_bobot' => $perhitungan_bobot]);
+		$this->load->view('menu/hasil', ['kriteria_count' => $kriteria, 'perhitungan_normalisasi' => $perhitungan_normalisasi, 'perhitungan_bobot' => $perhitungan_bobot]);
 		$this->load->view('layout/footer', ['js' => 'menu/rankingjs']);
 	}
 

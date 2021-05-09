@@ -20,11 +20,9 @@
                         <tr>
                             <th width="50" style="text-align:center">No</th>
                             <th width="250" style="text-align:center">Nama</th>
-                            <th style="text-align:center">C1</th>
-                            <th style="text-align:center">C2</th>
-                            <th style="text-align:center">C3</th>
-                            <th style="text-align:center">C4</th>
-                            <!-- <th style="text-align:center">C5</th> -->
+                            <?php foreach ($kriteria_count as $i => $v) { ?>
+                            <th style="text-align:center"><?php echo $v->kriteria; ?> </th>
+                            <?php } ?>
                         </tr>
                     </thead>
                     <tbody>
@@ -32,10 +30,13 @@
                             echo '<tr>';
                             echo '<td style="text-align:center">' . ($k + 1) . '</td>';
                             echo '<td>' . $v['nama'] . '</td>';
-                            echo '<td style="text-align:center">' . $v['c1'] . '</td>';
-                            echo '<td style="text-align:center">' . $v['c2'] . '</td>';
-                            echo '<td style="text-align:center">' . $v['c3'] . '</td>';
-                            echo '<td style="text-align:center">' . $v['c4'] . '</td>';
+                            foreach ($kriteria_count as $i => $data){
+                                echo '<td style="text-align:center">' . $v[$data->kriteria] . '</td>';
+                            }
+                            // echo '<td style="text-align:center">' . $v['c1'] . '</td>';
+                            // echo '<td style="text-align:center">' . $v['c2'] . '</td>';
+                            // echo '<td style="text-align:center">' . $v['c3'] . '</td>';
+                            // echo '<td style="text-align:center">' . $v['c4'] . '</td>';
                             // echo '<td style="text-align:center">' . $v['c5'] . '</td>';
                             echo '</tr>';
                         } ?>
@@ -54,11 +55,9 @@
                         <tr>
                             <th width="50" style="text-align:center">No</th>
                             <th width="250" style="text-align:center">Nama</th>
-                            <th style="text-align:center">C1</th>
-                            <th style="text-align:center">C2</th>
-                            <th style="text-align:center">C3</th>
-                            <th style="text-align:center">C4</th>
-                            <!-- <th style="text-align:center">C5</th> -->
+                            <?php foreach ($kriteria_count as $i => $v) { ?>
+                            <th style="text-align:center"><?php echo $v->kriteria; ?> </th>
+                            <?php } ?>
                             <th style="text-align:center">Total</th>
                         </tr>
                     </thead>
@@ -67,10 +66,13 @@
                             echo '<tr>';
                             echo '<td style="text-align:center">' . ($k + 1) . '</td>';
                             echo '<td>' . $v['nama'] . '</td>';
-                            echo '<td style="text-align:center">' . $v['c1'] . '</td>';
-                            echo '<td style="text-align:center">' . $v['c2'] . '</td>';
-                            echo '<td style="text-align:center">' . $v['c3'] . '</td>';
-                            echo '<td style="text-align:center">' . $v['c4'] . '</td>';
+                            foreach ($kriteria_count as $i => $data){
+                                echo '<td style="text-align:center">' . $v[$data->kriteria] . '</td>';
+                            }
+                            // echo '<td style="text-align:center">' . $v['c1'] . '</td>';
+                            // echo '<td style="text-align:center">' . $v['c2'] . '</td>';
+                            // echo '<td style="text-align:center">' . $v['c3'] . '</td>';
+                            // echo '<td style="text-align:center">' . $v['c4'] . '</td>';
                             // echo '<td style="text-align:center">' . $v['c5'] . '</td>';
                             echo '<td style="text-align:center">' . $v['total'] . '</td>';
                             echo '</tr>';
