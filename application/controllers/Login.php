@@ -51,6 +51,7 @@
 
 		foreach ($data as $idx_d => $d) {
 			$perhitungan_normalisasi[$idx_d]['nama'] = $d->nama;
+			$perhitungan_normalisasi[$idx_d]['departemen'] = $d->departemen;
 			foreach ($kriteria as $idx_k => $k) {
 				$jenis = strtolower($k->kriteria);
 				${$jenis}[] = $d->{$jenis};
@@ -65,6 +66,7 @@
 
 		foreach ($perhitungan_normalisasi as $idx_d => $d) {
 			$perhitungan_bobot[$idx_d]['nama'] = $d['nama'];
+			$perhitungan_bobot[$idx_d]['departemen'] = $d['departemen'];
 			$total = 0;
 			foreach ($kriteria as $idx_k => $k) {
 				$jenis = strtolower($k->kriteria);

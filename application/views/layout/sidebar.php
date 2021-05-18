@@ -19,8 +19,8 @@
             <!-- ini fungsi bikin menu -->
             <li><a href="<?= site_url('menu') ?>"><i class="fa fa-home"></i> <span>Home</span></a></li>
             <li><a href="<?= site_url('menu/pendaftar') ?>"><i class="fa fa-user"></i> <span>Input Data Staf</span></a></li>
+            <li><a href="<?= site_url('kriteria/IndexKriteria') ?>"><i class="fa fa-file-pdf-o"></i> <span>Data Kriteria</span></a></li>
             <li><a href="<?= site_url('mahasiswa') ?>"><i class="fa fa-hourglass"></i> <span>Penilaian Staf</span></a></li>
-            <li><a href="<?= site_url('kriteria/IndexKriteria') ?>"><i class="fa fa-file-pdf-o"></i> <span>Kriteria & Atribut</span></a></li>
             <!-- <li><a href="<?= site_url('kriteria') ?>"><i class="fa fa-file-pdf-o"></i> <span>Atribut</span></a></li> -->
             <li><a href="<?= site_url('menu/hasil') ?>"><i class="fa fa-list-ol"></i> <span>Hasil</span></a></li>            
             <li><a href="<?= site_url('menu/ranking') ?>"><i class="fa   fa-line-chart"></i> <span>Ranking</span></a></li>

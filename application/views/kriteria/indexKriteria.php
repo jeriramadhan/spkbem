@@ -1,10 +1,10 @@
 <div class="content-wrapper">
     <section class="content-header">
         <h1>
-            Kriteria Atribut
+            Data Kriteria
         </h1>
         <ol class="breadcrumb">
-            <li><a href="#">Kriteria Atribut</a></li>
+            <li><a href="#">Data Kriteria</a></li>
             <li class="active">Index</li>
         </ol>
     </section>

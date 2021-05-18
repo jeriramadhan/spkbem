@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Pengumuman Penilaian Staf BEMP PTIK</title>
+    <title>Sistem Penentuan Staf Terbaik BEMP PTIK UNJ</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -32,12 +32,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 
-<body class="skin-black-light layout-top-nav">
+<body class="skin-blue layout-top-nav">
   <header class="main-header">
     <nav class="navbar navbar-static-top">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a href="<?= site_url('login/pengumuman');?>" class="navbar-brand"><b>Sistem Pendukung Keputusan</b> BEMP PTIK UNJ</a>
+          <a href="<?= site_url('login/pengumuman');?>" class="navbar-brand"><b>Sistem Penentuan Staf Terbaik</b> BEMP PTIK UNJ</a>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
             <i class="fa fa-bars"></i>
           </button>

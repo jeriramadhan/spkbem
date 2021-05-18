@@ -3,10 +3,16 @@
   <div class="container">
     <!-- <h1 class="form-heading">login Form</h1> -->
     <div class="login-form">
+      <img src="<?= base_url("assets/unnamed.jpg"); ?>"  class="center">
+        <style>
+        .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}</style>
+<h2>Admin Login</h2>
       <div class="main-div">
-        <div class="panel">
-          <h2>Admin Login</h2>
-        </div>
         <!-- <form class="js-validation-signin px-30" action="<?php echo base_url().'index.php/login/auth'?>" method="post">
 
           <div class="form-group">
@@ -41,7 +47,7 @@
         </div>
         <!-- /.col -->
         <div class="col-xs-4">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+          <button type="submit" class="btn btn-info btn-block btn-flat">Sign In</button>
         </div>
         <!-- /.col -->
       </div>

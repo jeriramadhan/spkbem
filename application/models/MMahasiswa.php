@@ -28,6 +28,12 @@ class MMahasiswa extends CI_Model
         return $query->row();
     }
 
+    public function get_entries_by_name($nama)
+    {
+        $query = $this->db->get_where('pendaftar', ['nama' => $nama]);
+        return $query->row();
+    }
+
     public function get_nama()
     {
         $query = $this->db->get('pendaftar');
@@ -38,6 +44,8 @@ class MMahasiswa extends CI_Model
     {
         
         $this->nama         = $_POST['nama'];
+        $departemen = get_entries_by_name($_POST['nama']);
+        $this->departemen         = $departemen;
         $data = $this->get_kriteria();
         foreach ($data as $i => $d) { 
             $kriteria = $d->kriteria;       

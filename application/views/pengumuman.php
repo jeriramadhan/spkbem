@@ -53,13 +53,18 @@
                             }
                             echo '<td style="text-align:center">' . $v['total'] . '</td>';
                             echo '<td style="text-align:center">' . $v['rank'] . '</td>';
+                            echo '<td style="text-align:center">' . $v['departemen'] . '</td>';
                             foreach ($data as $d){
                               $datanilaibatas = $d->nilai_batas;
                             }
-                            if($v['total'] >= $datanilaibatas){
-                              echo '<td style="text-align:center">Staf Kategori Baik</td>';
-                            } else{
-                              echo '<td style="text-align:center">Staf Dibawah Standar</td>';
+                            if($v['total'] >= 2.66 && $v['total'] < 3.66){
+                              echo '<td style="text-align:center">A</td>';
+                            } else if($v['total'] < 2.66 && $v['total'] >=1.66){
+                              echo '<td style="text-align:center">C</td>';
+                            } else if($v['total'] < 1.66){
+                                echo '<td style="text-align:center">D</td>';
+                            }else{
+                                echo '<td style="text-align:center">A</td>';
                             }
                             echo '</tr>';
                         } ?>
@@ -87,12 +92,12 @@
             <div class="box-header with-border">
                 <!-- <h3 class="box-title">Selamat Datang Calon Anggota Baru</h3> -->
                 <div class="content">
-                    <h1 style="text-align:center">SISTEM PENDUKUNG KEPUTUSAN</h1>
-                    <h1 style="text-align:center">PENILAIAN Staf  BEMP PTIK UNJ</h1>
+                    <h1 style="text-align:center">Sistem Penentuan Staf Terbaik</h1>
+                    <h1 style="text-align:center">BEMP PTIK UNJ</h1>
                     <br><br>
                     <h2 style="text-align:center"> HARAP MENUNGGU PENGUMUMAN</h2>
                     <br><br>
-                    <h3 style="text-align:center">- PSDM BEMP PTIK UNJ -</h3>
+                    <h3 style="text-align:center">- BPH BEMP PTIK UNJ -</h3>
             </div>
 
         </div>
