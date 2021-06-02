@@ -17,8 +17,17 @@
         <!-- Default box -->
         <div class="box box-primary">
             <div class="box-header with-border">
+            
                 <h3 class="box-title">Selamat Datang Admin</h3>
                 <div class="content">
+                <img src="<?= base_url("assets/unnamed1.jpg"); ?>"  class="center">
+        <style>
+        .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}</style>
                     <h1 style="text-align:center">Sistem Penentuan Staf Terbaik</h1>
                     <h1 style="text-align:center">BEMP PTIK UNJ</h1>
                     <h3 style="text-align:center">- BPH BEMP PTIK UNJ -</h3>

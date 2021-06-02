@@ -1,17 +1,17 @@
-
 <body id="LoginForm">
   <div class="container">
     <!-- <h1 class="form-heading">login Form</h1> -->
     <div class="login-form">
-      <img src="<?= base_url("assets/unnamed.jpg"); ?>"  class="center">
-        <style>
+      <img src="<?= base_url("assets/unnamed.jpg"); ?>" class="center">
+      <style>
         .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 10%;
-}</style>
-<h2>Admin Login</h2>
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 40%;
+        }
+      </style>
+      <h2>Admin Login</h2>
       <div class="main-div">
         <!-- <form class="js-validation-signin px-30" action="<?php echo base_url().'index.php/login/auth'?>" method="post">
 
@@ -26,35 +26,37 @@
 
         </form> -->
         <div class="login-box-body">
-    <p class="login-box-msg">Sign in</p>
+          <p class="login-box-msg">Sign in</p>
 
-    <form action="<?php echo base_url().'index.php/login/auth'?>" method="post">
-      <div class="form-group has-feedback">
-        <input type="text" id="login-username" name="username" class="form-control" placeholder="Username"  required>
-        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
-      </div>
-      <div class="form-group has-feedback">
-        <input type="password" class="form-control" id="login-password" placeholder="Password" name="password" required>
-        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-      </div>
-      <div class="row">
-        <div class="col-xs-8">
-          <div class="checkbox icheck">
-            <label>
-              <input type="checkbox"> Remember Me
-            </label>
-          </div>
-        </div>
-        <!-- /.col -->
-        <div class="col-xs-4">
-          <button type="submit" class="btn btn-info btn-block btn-flat">Sign In</button>
-        </div>
-        <!-- /.col -->
-      </div>
-    </form>
+          <form action="<?php echo base_url().'index.php/login/auth'?>" method="post">
+            <div class="form-group has-feedback">
+              <input type="text" id="login-username" name="username" class="form-control" placeholder="Username"
+                required>
+              <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback">
+              <input type="password" class="form-control" id="login-password" placeholder="Password" name="password"
+                required>
+              <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            </div>
+            <div class="row">
+              <div class="col-xs-8">
+                <div class="checkbox icheck">
+                  <label>
+                    <input type="checkbox"> Remember Me
+                  </label>
+                </div>
+              </div>
+              <!-- /.col -->
+              <div class="col-xs-4">
+                <button type="submit" class="btn btn-info btn-block btn-flat">Sign In</button>
+              </div>
+              <!-- /.col -->
+            </div>
+          </form>
 
-  </div>
-  <!-- /.login-box-body -->
+        </div>
+        <!-- /.login-box-body -->
       </div>
     </div>
   </div>
@@ -71,7 +73,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 10px;
+    /* padding: 10px; */
   }
 
   .form-heading {
@@ -82,7 +84,7 @@
   .panel h2 {
     color: #444444;
     font-size: 18px;
-    margin: 0 0 8px 0;
+    margin: 0 0 4px 0;
   }
 
   .panel p {

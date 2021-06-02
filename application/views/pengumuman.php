@@ -3,7 +3,7 @@
         <h1 style="text-align:center">
             Pengumuman <br>Staf Terbaik BEMP PTIK UNJ
         </h1>
-        <img src="<?= base_url("assets/unnamed.jpg"); ?>"  class="center">
+        <img src="<?= base_url("assets/unnamed1.jpg"); ?>"  class="center">
         <style>
         .center {
   display: block;

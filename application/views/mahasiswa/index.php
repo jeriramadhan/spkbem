@@ -23,10 +23,9 @@
                         <tr>
                             <th width="50" style="text-align:center">No</th>
                             <th width="250" style="text-align:center">Nama</th>
-                            <th style="text-align:center">C1</th>
-                            <th style="text-align:center">C2</th>
-                            <th style="text-align:center">C3</th>
-                            <th style="text-align:center">C4</th>
+                            <?php foreach ($kriteria_count as $i => $v) { ?>
+                            <th style="text-align:center"><?php echo $v->kriteria; ?> </th>
+                            <?php } ?>
                             <!-- <th style="text-align:center">C5</th> -->
                             <th width="100" style="text-align:center">Action</th>
                         </tr>
@@ -36,10 +35,14 @@
                             echo '<tr>';
                             echo '<td style="text-align:center">' . ($k + 1) . '</td>';
                             echo '<td>' . $v->nama . '</td>';
-                            echo '<td style="text-align:center">' . $v->c1 . '</td>';
-                            echo '<td style="text-align:center">' . $v->c2 . '</td>';
-                            echo '<td style="text-align:center">' . $v->c3 . '</td>';
-                            echo '<td style="text-align:center">' . $v->c4 . '</td>';
+                            // echo '<td style="text-align:center">' . $v->c1 . '</td>';
+                            // echo '<td style="text-align:center">' . $v->c2 . '</td>';
+                            // echo '<td style="text-align:center">' . $v->c3 . '</td>';
+                            // echo '<td style="text-align:center">' . $v->c4 . '</td>';
+                            foreach ($kriteria_count as $i => $data){
+                                $hasil = $data->kriteria;
+                                echo '<td style="text-align:center">' . $v->$hasil . '</td>';
+                            }
                             // echo '<td style="text-align:center">' . $v->c5 . '</td>';
                             echo '<td style="text-align:center">
                             <a href="' . site_url('mahasiswa/update/' . $v->id) . '" style="text-decoration:none;color:black" data-toggle="tooltip" title="Update"><i class="fa fa-pencil"></i></a>&nbsp;

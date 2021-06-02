@@ -44,8 +44,8 @@ class MMahasiswa extends CI_Model
     {
         
         $this->nama         = $_POST['nama'];
-        $departemen = get_entries_by_name($_POST['nama']);
-        $this->departemen         = $departemen;
+        $departemenHasil = $this->get_entries_by_name($_POST['nama']);
+        $this->departemen         = $departemenHasil->departemen;
         $data = $this->get_kriteria();
         foreach ($data as $i => $d) { 
             $kriteria = $d->kriteria;       
