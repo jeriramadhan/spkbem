@@ -16,6 +16,13 @@ class MMahasiswa extends CI_Model
         return $query->result();
     }
 
+    function browse_nomor($tahun)
+    {
+        $this->db->select("*");
+        $this->db->where("angkatan", $tahun);
+        return $this->db->get("mahasiswa");
+    }
+
     public function get_kriteria()
     {
         $query = $this->db->get('kriteria');
@@ -45,7 +52,9 @@ class MMahasiswa extends CI_Model
         
         $this->nama         = $_POST['nama'];
         $departemenHasil = $this->get_entries_by_name($_POST['nama']);
+        $angkatanHasil = $this->get_entries_by_name($_POST['nama']);
         $this->departemen         = $departemenHasil->departemen;
+        $this->angkatan           = $angkatanHasil->angkatan;
         $data = $this->get_kriteria();
         foreach ($data as $i => $d) { 
             $kriteria = $d->kriteria;       
