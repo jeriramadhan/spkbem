@@ -57,13 +57,13 @@
                             foreach ($data as $d){
                               $datanilaibatas = $d->nilai_batas;
                             }
-                            if($v['total'] >= 2.66 && $v['total'] < 3.66){
-                              echo '<td style="text-align:center">A</td>';
-                            } else if($v['total'] < 2.66 && $v['total'] >=1.66){
-                              echo '<td style="text-align:center">C</td>';
-                            } else if($v['total'] < 1.66){
+                            if ($v['total'] >= 0.70 && $v['total'] < 0.81) {
+                                echo '<td style="text-align:center">B</td>';
+                            } else if ($v['total'] < 0.66 && $v['total'] >= 0.50) {
+                                echo '<td style="text-align:center">C</td>';
+                            } else if ($v['total'] < 0.50) {
                                 echo '<td style="text-align:center">D</td>';
-                            }else{
+                            } else {
                                 echo '<td style="text-align:center">A</td>';
                             }
                             echo '</tr>';

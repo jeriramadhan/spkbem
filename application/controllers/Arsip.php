@@ -40,7 +40,7 @@ class Arsip extends CI_Controller
     $data = $this->m_mahasiswa->browse_nomor($tahun)->result();
     // print_r($data);die;
     if ($data == '' || $data == null) {
-      $data['title'] = "<p style='color:red;'>Tahun Belum Ada Data";
+      $data['title'] = "<p style='color:red;'>Belum Ada Data Di Tahun Terpilih";
       $this->load->view('layout/header');
       $this->load->view('layout/sidebar');
       $this->load->view('arsip/nomor', $data);
