@@ -1,10 +1,10 @@
 <div class="content-wrapper">
     <section class="content-header">
         <h1>
-            Mahasiswa
+            Update Mahasiswa
         </h1>
         <ol class="breadcrumb">
-            <li><a href="#">Mahasiswa</a></li>
+            <li><a href="#">Update Mahasiswa</a></li>
             <li class="active">Update</li>
         </ol>
     </section>
@@ -29,11 +29,11 @@
                         <hr />
                         <small>Penilaian</small>
                     </div>
-                    <?php foreach ($kriteria as $i => $d) { 
-                        $krit = $d->kriteria;?>
-                    
+                    <?php foreach ($kriteria as $i => $d) {
+                        $krit = $d->kriteria; ?>
+
                         <div class="form-group col-md-4">
-                            <label>C<?= $i + 1?>: <?= $d->keterangan?></label>
+                            <label>C<?= $i + 1 ?>: <?= $d->keterangan ?></label>
                             <input type="text" class="form-control" name="c<?= $i + 1 ?>" value="<?= $data->$krit ?>" placeholder="Enter Nilai <?= $i + 1 ?>" required>
                         </div>
                     <?php } ?>

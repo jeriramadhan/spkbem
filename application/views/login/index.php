@@ -2,7 +2,7 @@
   <div class="container">
     <!-- <h1 class="form-heading">login Form</h1> -->
     <div class="login-form">
-      <img src="<?= base_url("assets/unnamed.jpg"); ?>" class="center">
+      <img src="<?= base_url("assets/unnamed2.jpg"); ?>" class="center">
       <style>
         .center {
           display: block;

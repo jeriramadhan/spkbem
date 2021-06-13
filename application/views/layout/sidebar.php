@@ -18,13 +18,25 @@
       <li class="header">MAIN NAVIGATION</li>
       <!-- ini fungsi bikin menu -->
       <li><a href="<?= site_url('menu') ?>"><i class="fa fa-home"></i> <span>Home</span></a></li>
-      <li><a href="<?= site_url('menu/pendaftar') ?>"><i class="fa fa-user"></i> <span>Input Data Staf</span></a></li>
-      <li><a href="<?= site_url('kriteria/IndexKriteria') ?>"><i class="fa fa-file-pdf-o"></i> <span>Data Kriteria</span></a></li>
-      <li><a href="<?= site_url('mahasiswa') ?>"><i class="fa fa-hourglass"></i> <span>Penilaian Staf</span></a></li>
+      <li class="<?php if ($this->uri->segment(1) == "menu" && $this->uri->segment(2) == "pendaftar") {
+                    echo "active";
+                  } ?>"><a href="<?= site_url('menu/pendaftar') ?>"><i class="fa fa-user"></i> <span>Input Data Staf</span></a></li>
+      <li class="<?php if ($this->uri->segment(1) == "kriteria" && $this->uri->segment(2) == "IndexKriteria") {
+                    echo "active";
+                  } ?>"><a href="<?= site_url('kriteria/IndexKriteria') ?>"><i class="fa fa-file-pdf-o"></i> <span>Data Kriteria</span></a></li>
+      <li class="<?php if ($this->uri->segment(1) == "mahasiswa") {
+                    echo "active";
+                  } ?>"><a href="<?= site_url('mahasiswa') ?>"><i class="fa fa-hourglass"></i> <span>Penilaian Staf</span></a></li>
       <!-- <li><a href="<?= site_url('kriteria') ?>"><i class="fa fa-file-pdf-o"></i> <span>Atribut</span></a></li> -->
-      <li><a href="<?= site_url('menu/hasil') ?>"><i class="fa fa-list-ol"></i> <span>Hasil</span></a></li>
-      <li><a href="<?= site_url('menu/ranking') ?>"><i class="fa   fa-line-chart"></i> <span>Ranking</span></a></li>
-      <li class="treeview">
+      <li class="<?php if ($this->uri->segment(1) == "menu" && $this->uri->segment(2) == "hasil") {
+                    echo "active";
+                  } ?>"><a href="<?= site_url('menu/hasil') ?>"><i class="fa fa-list-ol"></i> <span>Hasil</span></a></li>
+      <li class="<?php if ($this->uri->segment(1) == "menu" && $this->uri->segment(2) == "ranking") {
+                    echo "active";
+                  } ?>"><a href="<?= site_url('menu/ranking') ?>"><i class="fa   fa-line-chart"></i> <span>Ranking</span></a></li>
+      <li class="<?php if ($this->uri->segment(1) == "kriteria" && ($this->uri->segment(2) == "nilai" || $this->uri->segment(2) == "nilai")) {
+                    echo "active";
+                  } ?> treeview">
         <a href="#">
           <i class="fa fa-pie-chart"></i>
           <span>Pengaturan</span>
@@ -33,13 +45,19 @@
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="<?= site_url('kriteria/nilai') ?>"><i class="fa fa-circle-o"></i> Batas Kelulusan</a></li>
-          <li><a href="<?= site_url('kriteria/status') ?>"><i class="fa fa-circle-o"></i> Status Pengumuman</a></li>
+          <li class="<?php if ($this->uri->segment(2) == "nilai") {
+                        echo "active";
+                      } ?>"><a href="<?= site_url('kriteria/nilai') ?>"><i class="fa fa-circle-o"></i> Batas Kelulusan</a></li>
+          <li class="<?php if ($this->uri->segment(2) == "status") {
+                        echo "active";
+                      } ?>"><a href="<?= site_url('kriteria/status') ?>"><i class="fa fa-circle-o"></i> Status Pengumuman</a></li>
           <!-- <li><a href="<?= site_url('kriteria/keterangan') ?>"><i class="fa fa-circle-o"></i> Keterangan</a></li> -->
 
         </ul>
       </li>
-      <li><a href="<?= site_url('arsip/browse_tahun') ?>"><i class="fa fa-file-pdf-o"></i> <span>Data Arsip</span></a></li>
+      <li class="<?php if ($this->uri->segment(1) == "arsip") {
+                    echo "active";
+                  } ?>"><a href="<?= site_url('arsip/browse_tahun') ?>"><i class="fa fa-file-pdf-o"></i> <span>Data Arsip</span></a></li>
       <!-- <li><a href="<?= site_url('login/logout') ?>"><i class="fa fa-user"></i> <span>Logout</span></a></li> -->
     </ul>
   </section>

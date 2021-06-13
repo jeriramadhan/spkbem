@@ -1,10 +1,10 @@
 <div class="content-wrapper">
     <section class="content-header">
         <h1>
-            Pendaftar
+            Update Kriteria
         </h1>
         <ol class="breadcrumb">
-            <li><a href="#">Pendaftar</a></li>
+            <li><a href="#">Update Kriteria</a></li>
             <li class="active">Update</li>
         </ol>
     </section>
@@ -27,7 +27,7 @@
                         <!-- ganti sesuai kolom -->
                         <div class="form-group col-md-4">
                             <label>Keterangan</label>
-                            <input type="text" class="form-control" name="keterangan"value="<?= $data->keterangan ?>" required>
+                            <input type="text" class="form-control" name="keterangan" value="<?= $data->keterangan ?>" required>
                         </div>
                         <div class="form-group col-md-4">
                             <label>Tipe</label>
