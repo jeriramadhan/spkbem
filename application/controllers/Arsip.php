@@ -15,7 +15,7 @@ class Arsip extends CI_Controller
 
   function browse_tahun()
   {
-    $data['title'] = "Browse Tahun";
+    $data['title'] = "Pilih Tahun";
     $this->load->view('layout/header');
     $this->load->view('layout/sidebar');
     $this->load->view('arsip/nomor', $data);
@@ -36,7 +36,16 @@ class Arsip extends CI_Controller
   public function data()
   {
     $tahun = $this->input->post('tahun');
+    
     $data = $this->m_mahasiswa->browse_nomor($tahun)->result();
+    // print_r($data);die;
+    if ($data == '' || $data == null) {
+      $data['title'] = "<p style='color:red;'>Tahun Belum Ada Data";
+      $this->load->view('layout/header');
+      $this->load->view('layout/sidebar');
+      $this->load->view('arsip/nomor', $data);
+      $this->load->view('layout/footer', ['js' => 'kriteria/indexjs']);
+    } else {
   // $data = $this->m_mahasiswa->get_entries();
   $kriteria = $this->m_kriteria->get_entries();
 
@@ -109,4 +118,5 @@ class Arsip extends CI_Controller
   $this->load->view('arsip', ['kriteria_count' => $kriteria, 'perhitungan_normalisasi' => $perhitungan_normalisasi, 'perhitungan_bobot' => $perhitungan_bobot, 'data' => $data, 'datapengumuman'=>$datapengumuman]);
   $this->load->view('layout/footer', ['js' => 'menu/rankingjs']);
   }
+}
 }

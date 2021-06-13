@@ -17,9 +17,9 @@
     <!-- Default box -->
     <div class="box box-primary">
       <div class="box-header with-border">
-        <h3 class="box-title">Arsip</h3>
+        <h3 class="box-title">Arsip</h3><br>
+        <h4><?php echo $title; ?></h4>
       </div>
-
       <form action="<?php echo site_url('arsip/data'); ?>" method="post">
         <div class="form-group">
           <div class="input-group col-sm-3">
