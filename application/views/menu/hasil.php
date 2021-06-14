@@ -4,7 +4,7 @@
             Hasil Perhitungan SAW
         </h1>
         <ol class="breadcrumb">
-            <li><a href="#">Mahasiswa</a></li>
+            <li><a href="#">Hasil Perhitungan</a></li>
             <li class="active">View SAW</li>
         </ol>
     </section>
