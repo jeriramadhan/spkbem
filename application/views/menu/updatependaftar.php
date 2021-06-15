@@ -1,10 +1,10 @@
 <div class="content-wrapper">
     <section class="content-header">
         <h1>
-            Pendaftar
+            Input Data Staf
         </h1>
         <ol class="breadcrumb">
-            <li><a href="#">Pendaftar</a></li>
+            <li><a href="#">Input Data Staf</a></li>
             <li class="active">Update</li>
         </ol>
     </section>
@@ -13,7 +13,7 @@
 
         <div class="box box-primary">
             <div class="box-header with-border">
-                <h3 class="box-title">Update <?= $data->nama ?></h3>
+                <h3 class="box-title">Update Data <?= $data->nama ?></h3>
             </div>
 
             <form role="form" action="<?= site_url('menu/updatePendaftar/' . $data->id) ?>" method="post" style="padding: 10px 20px">
