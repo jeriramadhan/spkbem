@@ -16,7 +16,6 @@
       if($this->session->userdata('masuk')==true){
         redirect('login/berhasillogin');
       }else{
-
          $this->load->view('layout/header-umum');
          $this->load->view('login/index');
       }
@@ -134,9 +133,12 @@
     }
 
     function gagallogin(){
-      // $url=base_url('login');
-      echo $this->session->set_flashdata('msg','<div class="alert alert-warning" role="alert"><button type="button" class="close" data-dismiss="alert"><i class="fa fa-close"></i></button> Username Atau Password Salah</div>');
-      redirect('login');
+      echo '<script language="javascript">
+                        window.alert("LOGIN GAGAL! Silakan coba lagi");
+                        window.location.href="./";
+                    </script>';
+      // echo '<div class="alert alert-warning" role="alert"><button type="button" class="close" data-dismiss="alert"><i class="fa fa-close"></i></button> Username Atau Password Salah</div>';
+      // redirect('login');
     }
 
     function logout(){

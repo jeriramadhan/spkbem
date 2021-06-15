@@ -13,6 +13,9 @@ class MMahasiswa extends CI_Model
     public function get_entries()
     {
         $query = $this->db->get('mahasiswa');
+        // $tahun = date('Y');
+        // $tahun = date('Y', strtotime('-2 year'));
+        // $this->db->where("angkatan", $tahun);
         return $query->result();
     }
 
