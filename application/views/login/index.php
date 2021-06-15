@@ -11,8 +11,9 @@
           width: 40%;
         }
       </style>
-      <h2>Admin Login</h2>
+      
       <div class="main-div">
+      <h2>Admin Login</h2>
         <!-- <form class="js-validation-signin px-30" action="<?php echo base_url().'index.php/login/auth'?>" method="post">
 
           <div class="form-group">

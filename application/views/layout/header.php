@@ -40,7 +40,7 @@
             <!-- Logo -->
             <a href="<?= site_url('menu');?>"class="logo">
                 <!-- mini logo for sidebar mini 50x50 pixels -->
-                <span class="logo-mini"><b>F</b>SAW</span>
+                <span class="logo-mini">PTIK</span>
                 <!-- logo for regular state and mobile devices -->
                 <span class="logo-lg">  BEMP PTIK-UNJ</span>
             </a>
