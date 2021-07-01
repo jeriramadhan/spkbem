@@ -42,28 +42,26 @@
     <!-- Default box -->
     <div class="box box-primary">
       <div class="box-header with-border">
-        <h3 class="box-title">Arsip</h3>
+        <h3 class="box-title">Pilih Tahun</h3>
       </div>
-      <form action="<?php echo site_url('arsip/browse_tampil_nomor'); ?>" method="post">
-        <div class="form-group">
-          <div class="input-group col-sm-3">
+      <form class="form-inline" action="<?php echo site_url('arsip/data'); ?>" method="post">
+        <div class="form-group well">
+          <div class="input-group">
             <span class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></span>
             <select name="tahun" class="form-control">
               <?php
-              $tahun = 2014;
-              for ($i = $tahun; $i <= $tahun + 15; $i++)
+              $tahun = 2016;
+              for ($i = $tahun; $i <= $tahun + 7; $i++)
                 echo "<option value=$i>$i<br></option>";
               ?>
             </select>
           </div>
+          <button type="submit" class="btn btn-primary mb-2">Tampilkan</button>
         </div>
-        <div class="form-group">
-          <div class="well">
-            <button class="btn btn-primary"><i class="fa fa-save fa-fw"></i> Browse</button>
-          </div>
-        </div>
+
       </form>
-      <table class="table table-striped table-hover">
+
+      <table id="table2" class="table table-striped table-hover">
         <thead>
           <tr>
             <td>Nama</td>

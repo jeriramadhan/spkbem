@@ -16,13 +16,14 @@
 
     <!-- Default box -->
     <div class="box box-primary">
+
       <div class="box-header with-border">
-        <h3 class="box-title">Arsip</h3><br>
+        <!-- <h3 class="box-title">Pilih Tahun</h3><br> -->
         <h4><?php echo $title; ?></h4>
       </div>
-      <form action="<?php echo site_url('arsip/data'); ?>" method="post">
-        <div class="form-group">
-          <div class="input-group col-sm-3">
+      <form class="form-inline" action="<?php echo site_url('arsip/data'); ?>" method="post">
+        <div class="form-group well">
+          <div class="input-group">
             <span class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></span>
             <select name="tahun" class="form-control">
               <?php
@@ -32,12 +33,9 @@
               ?>
             </select>
           </div>
+          <button type="submit" class="btn btn-primary mb-2">Tampilkan</button>
         </div>
-        <div class="form-group">
-          <div class="well">
-            <button class="btn btn-primary"><i class="fa fa-save fa-fw"></i> Browse</button>
-          </div>
-        </div>
+
       </form>
 
     </div>

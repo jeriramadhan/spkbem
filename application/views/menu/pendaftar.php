@@ -26,6 +26,7 @@
                           <!-- bikin paramater pendaftar yang lu mau masukkin -->
                             <th width="15" style="text-align:center">No</th>
                             <th width="250" style="text-align:center">Nama</th>
+                            <th width="200" style="text-align:center">NIM</th>
                             <th width="150" style="text-align:center">Departemen</th>
                             <th width="100" style="text-align:center">Jenis Kelamin</th>
                             <th width="100" style="text-align:center">No Pengurus</th>
@@ -38,6 +39,7 @@
                             echo '<tr>';
                             echo '<td style="text-align:center">' . ($k + 1) . '</td>';
                             echo '<td>' . $resdata->nama . '</td>';
+                            echo '<td style="text-align:center">' . $resdata->nim . '</td>';
                             echo '<td style="text-align:center">' . $resdata->departemen . '</td>';
                             echo '<td style="text-align:center">' . $resdata->jenis_kelamin . '</td>';
                             echo '<td style="text-align:center">' . $resdata->no_pengurus . '</td>';

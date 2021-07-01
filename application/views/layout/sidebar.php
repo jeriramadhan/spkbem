@@ -38,16 +38,16 @@
                     echo "active";
                   } ?> treeview">
         <a href="#">
-          <i class="fa fa-pie-chart"></i>
+          <i class="fa fa-gear"></i>
           <span>Pengaturan</span>
-          <span class="pull-right-container">
+          <span class=" pull-right-container">
             <i class="fa fa-angle-left pull-right"></i>
-          </span>
+            </span>
         </a>
         <ul class="treeview-menu">
-          <li class="<?php if ($this->uri->segment(2) == "nilai") {
-                        echo "active";
-                      } ?>"><a href="<?= site_url('kriteria/nilai') ?>"><i class="fa fa-circle-o"></i> Batas Kelulusan</a></li>
+          <!-- <li class="<?php if ($this->uri->segment(2) == "nilai") {
+                            echo "active";
+                          } ?>"><a href="<?= site_url('kriteria/nilai') ?>"><i class="fa fa-circle-o"></i> Batas Kelulusan</a></li> -->
           <li class="<?php if ($this->uri->segment(2) == "status") {
                         echo "active";
                       } ?>"><a href="<?= site_url('kriteria/status') ?>"><i class="fa fa-circle-o"></i> Status Pengumuman</a></li>
@@ -58,6 +58,9 @@
       <li class="<?php if ($this->uri->segment(1) == "arsip") {
                     echo "active";
                   } ?>"><a href="<?= site_url('arsip/browse_tahun') ?>"><i class="fa fa-file-pdf-o"></i> <span>Data Arsip</span></a></li>
+      <li class="<?php if ($this->uri->segment(1) == "bantuan") {
+                    echo "active";
+                  } ?>"><a href="<?= site_url('bantuan/index') ?>"><i class="fa fa-info-circle"></i> <span>Bantuan</span></a></li>
       <!-- <li><a href="<?= site_url('login/logout') ?>"><i class="fa fa-user"></i> <span>Logout</span></a></li> -->
     </ul>
   </section>
