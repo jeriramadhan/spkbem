@@ -76,24 +76,31 @@
                         </tbody>
                     </table>
                 </div>
-
-            </div>
-            <h3>Keterangan</h3>
-            <ul>
-                <li>C adalah indikator penilaian</li>
-                <li>Total adalah akumulasi nilai dari tiap indikator</li>
-                <li>Ranking adalah hasil urutan penilaian</li>
                 <br><br>
-            </ul>
-            <ul>Detail Penilaian
-            <?php foreach ($kriteria_count as $i => $v) { ?>
-                <ul><?php echo $v->kriteria . " adalah " . $v->keterangan; ?> </ul>
-            <?php } ?>
-            <ul></ul>
-            <br><br>
-            <!-- <li>Ini Coba Push</li> -->
+                <div class="col-md-12">
+                    <br><br>
+                    <h3>Keterangan</h3>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>C adalah indikator penilaian</li>
+                            <li>Total adalah akumulasi nilai dari tiap indikator</li>
+                            <li>Ranking adalah hasil urutan penilaian</li>
+                            <br><br>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>Detail Penilaian
+                            <?php foreach ($kriteria_count as $i => $v) { ?>
+                                <li><?php echo $v->kriteria . " adalah " . $v->keterangan; ?> </li>
+                            <?php } ?>
+                        </ul>
+                    </div>
+                    <br><br>
+                </div>
+            </div>
 
         </section>
+
     <?php    } else { ?>
         <section class="content">
             <div class="box box-primary">
