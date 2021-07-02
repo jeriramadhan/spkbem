@@ -13,7 +13,7 @@
 
         <div class="box box-primary">
             <div class="box-header with-border">
-               <!-- <a href="<?= site_url('mahasiswa/view_saw') ?>" class="btn btn-primary">Perangkingan</a> -->
+                <!-- <a href="<?= site_url('mahasiswa/view_saw') ?>" class="btn btn-primary">Perangkingan</a> -->
                 <a href="<?= site_url('kriteria/createKriteria') ?>" class="btn btn-success">Tambah</a>
             </div>
 
@@ -25,7 +25,7 @@
                             <th width="200" style="text-align:center">Kriteria</th>
                             <th width="350" style="text-align:center">Keterangan</th>
                             <th style="text-align:center">Nilai Atribut</th>
-                            <th width="100" style="text-align:center">Action</th>
+                            <th width="100" style="text-align:center">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -44,6 +44,9 @@
                 </table>
             </div>
         </div>
-
+        <strong><u>Keterangan</u></strong>
+        <ul>
+            <li>Jumlah nilai bobot<strong> HARUS </strong>berjumlah total bobot 1.</li>
+        </ul>
     </section>
 </div>

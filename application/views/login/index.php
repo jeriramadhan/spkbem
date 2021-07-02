@@ -27,7 +27,7 @@
 
         </form> -->
         <div class="login-box-body">
-          <p class="login-box-msg">Sign in</p>
+          <p class="login-box-msg">Masuk</p>
 
           <form action="<?php echo base_url().'index.php/login/auth'?>" method="post">
             <div class="form-group has-feedback">
@@ -44,13 +44,13 @@
               <div class="col-xs-8">
                 <div class="checkbox icheck">
                   <label>
-                    <input type="checkbox"> Remember Me
+                    <input type="checkbox"> Ingat Saya
                   </label>
                 </div>
               </div>
               <!-- /.col -->
               <div class="col-xs-4">
-                <button type="submit" class="btn btn-info btn-block btn-flat">Sign In</button>
+                <button type="submit" class="btn btn-info btn-block btn-flat">Masuk</button>
               </div>
               <!-- /.col -->
             </div>

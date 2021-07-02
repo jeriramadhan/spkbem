@@ -15,9 +15,9 @@
     <!-- /.search form -->
     <!-- sidebar menu: : style can be found in sidebar.less -->
     <ul class="sidebar-menu" data-widget="tree">
-      <li class="header">MAIN NAVIGATION</li>
+      <li class="header">MENU</li>
       <!-- ini fungsi bikin menu -->
-      <li><a href="<?= site_url('menu') ?>"><i class="fa fa-home"></i> <span>Home</span></a></li>
+      <li><a href="<?= site_url('menu') ?>"><i class="fa fa-home"></i> <span>Beranda</span></a></li>
       <li class="<?php if ($this->uri->segment(1) == "menu" && $this->uri->segment(2) == "pendaftar") {
                     echo "active";
                   } ?>"><a href="<?= site_url('menu/pendaftar') ?>"><i class="fa fa-user"></i> <span>Input Data Staf</span></a></li>

@@ -5,7 +5,7 @@
         </h1>
         <ol class="breadcrumb">
             <li><a href="#">Input Data Staf</a></li>
-            <li class="active">Update</li>
+            <li class="active">Ubah</li>
         </ol>
     </section>
 

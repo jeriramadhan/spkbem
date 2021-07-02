@@ -31,7 +31,7 @@
                             <th width="100" style="text-align:center">Jenis Kelamin</th>
                             <th width="100" style="text-align:center">No Pengurus</th>
                             <th width="150" style="text-align:center">Angkatan</th>
-                            <th width="50" style="text-align:center">Action</th>
+                            <th width="50" style="text-align:center">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>

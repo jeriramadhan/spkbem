@@ -3,10 +3,10 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Home
+            Beranda
         </h1>
         <ol class="breadcrumb">
-            <li><a href="#">Home</a></li>
+            <li><a href="#">Beranda</a></li>
             <li class="active">Index</li>
         </ol>
     </section>

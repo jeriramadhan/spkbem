@@ -28,7 +28,7 @@
                                 <th style="text-align:center"><?php echo $v->kriteria; ?> </th>
                             <?php } ?>
                             <!-- <th style="text-align:center">C5</th> -->
-                            <th width="100" style="text-align:center">Action</th>
+                            <th width="100" style="text-align:center">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>

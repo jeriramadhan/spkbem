@@ -5,7 +5,7 @@
         </h1>
         <ol class="breadcrumb">
             <li><a href="#">Update Kriteria</a></li>
-            <li class="active">Update</li>
+            <li class="active">Ubah</li>
         </ol>
     </section>
 
