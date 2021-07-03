@@ -13,7 +13,7 @@
 
         <div class="box box-primary">
             <div class="box-header with-border">
-                <h3 class="box-title">Update Data <?= $data->nama ?></h3>
+                <h3 class="box-title">Ubah Data <?= $data->nama ?></h3>
             </div>
 
             <form role="form" action="<?= site_url('menu/updatePendaftar/' . $data->id) ?>" method="post" style="padding: 10px 20px">

@@ -46,8 +46,8 @@
                             }
                             // echo '<td style="text-align:center">' . $v->c5 . '</td>';
                             echo '<td style="text-align:center">
-                            <a href="' . site_url('mahasiswa/update/' . $v->id) . '" style="text-decoration:none;color:black" data-toggle="tooltip" title="Update"><i class="fa fa-pencil"></i></a>&nbsp;
-                            <a href="' . site_url('mahasiswa/delete/' . $v->id) . '" style="text-decoration:none;color:black" data-toggle="tooltip" title="Delete"><i class="fa fa-trash"></i></a>';
+                            <a href="' . site_url('mahasiswa/update/' . $v->id) . '" style="text-decoration:none;color:black" data-toggle="tooltip" title="Ubah"><i class="fa fa-pencil"></i></a>&nbsp;
+                            <a href="' . site_url('mahasiswa/delete/' . $v->id) . '" style="text-decoration:none;color:black" data-toggle="tooltip" title="Hapus"><i class="fa fa-trash"></i></a>';
                             echo '</tr>';
                         } ?>
                     </tbody>
