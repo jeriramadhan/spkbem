@@ -3,6 +3,7 @@
 class MPendaftar extends CI_Model
 {
   public $nama;
+  public $nim;
   public $departemen;
   public $jenis_kelamin;
   public $no_pengurus;
@@ -26,6 +27,7 @@ class MPendaftar extends CI_Model
   {
     $this->nama       = $_POST['nama'];
     $this->departemen      = $_POST['departemen'];
+    $this->nim      = $_POST['nim'];
     $this->jenis_kelamin   = $_POST['jenis_kelamin'];
     $this->no_pengurus       = $_POST['no_pengurus'];
     $this->angkatan      = $_POST['angkatan'];
@@ -40,6 +42,7 @@ class MPendaftar extends CI_Model
   {
     $this->nama       = $_POST['nama'];
     $this->departemen      = $_POST['departemen'];
+    $this->nim      = $_POST['nim'];
     $this->jenis_kelamin   = $_POST['jenis_kelamin'];
     $this->no_pengurus       = $_POST['no_pengurus'];
     $this->angkatan      = $_POST['angkatan'];

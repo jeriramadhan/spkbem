@@ -24,6 +24,10 @@
                             <label>Nama</label>
                             <input type="text" class="form-control" name="nama" value="<?= $data->nama ?>" required>
                         </div>
+                        <div class="form-group col-md-4">
+                            <label>NIM</label>
+                            <input type="text" class="form-control" name="nim" value="<?= $data->nim ?>" required>
+                        </div>
                         <!-- ganti sesuai kolom -->
                         <div class="form-group col-md-4">
                             <label>Departemen</label>

@@ -23,6 +23,10 @@
                             <label>Nama</label>
                             <input type="text" class="form-control" name="nama" placeholder="Masukkan nama" required>
                         </div>
+                        <div class="form-group col-md-4">
+                            <label>NIM</label>
+                            <input type="text" class="form-control" name="nim" placeholder="Masukkan NIM" required>
+                        </div>
                         <!-- ganti sesuai kolom -->
                         <div class="form-group col-md-4">
                             <label>Departemen</label>
