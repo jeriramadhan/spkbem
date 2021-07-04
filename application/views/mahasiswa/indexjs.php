@@ -8,7 +8,11 @@
             'info': true,
             'autoWidth': true,
             "language": {
-                "search": "Pencarian"
+                "search": "Pencarian",
+                "paginate": {
+                    "previous": "Sebelumnya",
+                    "next": "Selanjutnya"
+                }
             },
             initComplete: function() {
                 var input = $('.dataTables_filter input').unbind(),
