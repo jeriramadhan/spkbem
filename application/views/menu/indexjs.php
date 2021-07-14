@@ -22,11 +22,11 @@
                         .click(function() {
                             self.search(input.val()).draw();
                         }),
-                        $clearButton = $('<button>')
+                       $clearButton = $('<button>')
                         .text('Hapus')
                         .click(function() {
                             input.val('');
-                            $searchButton.click();
+                           $searchButton.click();
                         })
                     $('.dataTables_filter').append($searchButton, $clearButton);
                 }
