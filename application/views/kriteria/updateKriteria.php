@@ -1,10 +1,10 @@
 <div class="content-wrapper">
     <section class="content-header">
         <h1>
-            Update Kriteria
+            Ubah Kriteria
         </h1>
         <ol class="breadcrumb">
-            <li><a href="#">Update Kriteria</a></li>
+            <li><a href="#">Ubah Kriteria</a></li>
             <li class="active">Ubah</li>
         </ol>
     </section>
@@ -13,7 +13,7 @@
 
         <div class="box box-primary">
             <div class="box-header with-border">
-                <h3 class="box-title">Update <?= $data->kriteria ?></h3>
+                <h3 class="box-title">Ubah <?= $data->kriteria ?></h3>
             </div>
 
             <form role="form" action="<?= site_url('kriteria/updateKriteria/' . $data->id) ?>" method="post" style="padding: 10px 20px">

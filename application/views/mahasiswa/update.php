@@ -1,7 +1,7 @@
 <div class="content-wrapper">
     <section class="content-header">
         <h1>
-            Update Penilaian Staf
+            Ubah Penilaian Staf
         </h1>
         <ol class="breadcrumb">
             <li><a href="#">Penilaian Staf</a></li>
@@ -13,7 +13,7 @@
 
         <div class="box box-primary">
             <div class="box-header with-border">
-                <h3 class="box-title">Update Penilaian <?= $data->nama ?></h3>
+                <h3 class="box-title">Ubah Penilaian <?= $data->nama ?></h3>
             </div>
 
             <form role="form" action="<?= site_url('mahasiswa/update/' . $data->id) ?>" method="post" style="padding: 10px 20px">
