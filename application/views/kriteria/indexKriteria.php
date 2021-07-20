@@ -37,7 +37,7 @@
                             echo '<td style="text-align:center">' . $v->bobot . '</td>';
                             echo '<td style="text-align:center">
                             <a href="' . site_url('kriteria/updateKriteria/' . $v->id) . '" style="text-decoration:none;color:black" data-toggle="tooltip" title="Ubah"><i class="fa fa-pencil"></i></a>&nbsp;
-                            <a data-toggle="modal" data-target="#delete' . $v->id . '" title="Delete"><i class="fa fa-trash"></i></a>';
+                            <a data-toggle="modal" data-target="#delete' . $v->id . '" title="Hapus"><i class="fa fa-trash"></i></a>';
                             echo '</tr>';
                         } ?>
                     </tbody>
