@@ -22,7 +22,7 @@ class Mahasiswa extends CI_Controller
 		$kriteria = $this->m_kriteria->get_entries();
 		$this->load->view('layout/header');
 		$this->load->view('layout/sidebar');
-		$this->load->view('mahasiswa/index', ['data' => $data,'kriteria_count' => $kriteria]);
+		$this->load->view('mahasiswa/index', ['data' => $data, 'data2' => $data, 'kriteria_count' => $kriteria]);
 		$this->load->view('layout/footer', ['js' => 'mahasiswa/indexjs']);
 	}
 

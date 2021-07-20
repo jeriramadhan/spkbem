@@ -20,10 +20,10 @@
             </div>
 
             <div class="box-body">
-                <table id="table" class="table table-bordered table-hover">
+                <table id="table2" class="table table-bordered table-hover">
                     <thead>
                         <tr>
-                          <!-- bikin paramater pendaftar yang lu mau masukkin -->
+                            <!-- bikin paramater pendaftar yang lu mau masukkin -->
                             <th width="15" style="text-align:center">No</th>
                             <th width="250" style="text-align:center">Nama</th>
                             <th width="200" style="text-align:center">NIM</th>
@@ -35,9 +35,9 @@
                         </tr>
                     </thead>
                     <tbody>
-                    <?php foreach ($data as $k => $resdata) {
+                        <?php foreach ($data as $k => $resdata) {
                             echo '<tr>';
-                            echo '<td style="text-align:center">' . ($k + 1) . '</td>';
+                            echo '<td style="text-align:center"></td>';
                             echo '<td>' . $resdata->nama . '</td>';
                             echo '<td style="text-align:center">' . $resdata->nim . '</td>';
                             echo '<td style="text-align:center">' . $resdata->departemen . '</td>';
@@ -46,19 +46,37 @@
                             echo '<td style="text-align:center">' . $resdata->angkatan . '</td>';
                             echo '<td style="text-align:center">
                             <a href="' . site_url('menu/updatePendaftar/' . $resdata->id) . '" style="text-decoration:none;color:black" data-toggle="tooltip" title="Update"><i class="fa fa-pencil"></i></a>&nbsp;
-                            <a href="' . site_url('menu/deletePendaftar/' . $resdata->id) . '" style="text-decoration:none;color:black" data-toggle="tooltip" title="Delete"><i class="fa fa-trash"></i></a>';
+                            <a data-toggle="modal" data-target="#delete' . $resdata->id . '" title="Delete"><i class="fa fa-trash"></i></a>';
                             echo '</tr>';
                         } ?>
                     </tbody>
                 </table>
             </div>
         </div>
+        <?php foreach ($data as $k => $resdata) { ?>
+            <div id="delete<?php echo $resdata->id ?>" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>Anda Yakin Akan Menghapus Data <p class="text-danger"><?php echo $resdata->nama; ?> ?</p>
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="clearfix">
+
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Batal</button>
+                                <a class="btn btn-danger" href="<?= site_url('menu/deletePendaftar/' . $resdata->id) ?>" role="button">Hapus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <?php } ?>
 
     </section>
     <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
 <script>
-    $(document).ready(function() {
-    })
+    $(document).ready(function() {})
 </script>

@@ -1,4 +1,13 @@
 <script>
+    $(function() {
+        $('#myModal').on('show.bs.modal', function() {
+            var myModal = $(this);
+            clearTimeout(myModal.data('hideInterval'));
+            myModal.data('hideInterval', setTimeout(function() {
+                myModal.modal('hide');
+            }, 5000));
+        });
+    });
     $(document).ready(function() {
         $('#table').DataTable({
             'paging': true,
@@ -6,18 +15,22 @@
             'searching': true,
             'ordering': true,
             'info': true,
-            'autoWidth': true
-        })
-
-        $('#table2').DataTable({
-            'paging': true,
-            'lengthChange': false,
-            // 'searching': true,
-            'ordering': true,
-            'info': true,
             'autoWidth': true,
+            "aaSorting": []
+        });
+        var t = $('#table2').DataTable({
+            "columnDefs": [{
+                "searchable": false,
+                "orderable": false,
+                "targets": 0
+            }],
             "language": {
                 "search": "Pencarian",
+                "lengthMenu": "Tampilkan _MENU_ data per halaman",
+                "zeroRecords": "Maaf, data tidak ditemukan.",
+                "info": "Tampilkan _PAGE_ dari _PAGES_ halaman",
+                "infoEmpty": "Maaf, data kosong.",
+                "infoFiltered": "(filtered from _MAX_ total records)",
                 "paginate": {
                     "previous": "Sebelumnya",
                     "next": "Selanjutnya"
@@ -38,8 +51,20 @@
                         $searchButton.click();
                     })
                 $('.dataTables_filter').append($searchButton, $clearButton);
-            }
+            },
+            "order": [
+                [1, 'asc']
+            ]
         });
+
+        t.on('order.dt search.dt', function() {
+            t.column(0, {
+                search: 'applied',
+                order: 'applied'
+            }).nodes().each(function(cell, i) {
+                cell.innerHTML = i + 1;
+            });
+        }).draw();
 
     })
 </script>

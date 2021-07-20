@@ -40,7 +40,17 @@
                 </div>
 
                 <div class="box-footer">
-                    <button type="submit" class="btn btn-primary">Simpan</button>
+                    <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Simpan</button>
+                </div>
+                <div id="myModal" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                                <p class="text-success">Sukses Mengubah Data !</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </form>
         </div>

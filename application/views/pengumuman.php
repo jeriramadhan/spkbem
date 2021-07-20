@@ -49,9 +49,12 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach ($perhitungan_bobot as $k => $v) {
+                            <?php 
+                            // $no = 0;
+                             foreach ($perhitungan_bobot as $k => $v) {
+                                //  $no++;
                                 echo '<tr>';
-                                echo '<td style="text-align:center">' . ($k + 1) . '</td>';
+                                echo '<td style="text-align:center"></td>';
                                 echo '<td>' . $v['nama'] . '</td>';
                                 foreach ($kriteria_count as $i => $data2) {
                                     echo '<td style="text-align:center">' . $v[$data2->kriteria] . '</td>';

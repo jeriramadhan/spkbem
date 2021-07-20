@@ -27,7 +27,7 @@ class Menu extends CI_Controller
 		$this->load->view('layout/header');
 		$this->load->view('layout/sidebar');
 		$this->load->view('menu/pendaftar', ['data' => $data]);
-		$this->load->view('layout/footer', ['js' => 'menu/indexjs']);
+		$this->load->view('layout/footer', ['js' => 'menu/rankingjs']);
 	}
 
 	public function createPendaftar()

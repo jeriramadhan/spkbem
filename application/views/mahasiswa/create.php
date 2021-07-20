@@ -21,11 +21,11 @@
                     <div class="col-md-12 row">
                         <div class="form-group col-md-4">
                             <label>Nama</label>
-                              <select class="form-control" id="nama" name="nama">
-                                  <?php foreach ($getUser as $row) {
-                                echo '<option  value="' . $row->nama . '">' . $row->nama . '</option>';
-                            }
-                            ?>
+                            <select class="form-control" id="nama" name="nama">
+                                <?php foreach ($getUser as $row) {
+                                    echo '<option  value="' . $row->nama . '">' . $row->nama . '</option>';
+                                }
+                                ?>
                             </select>
                         </div>
                     </div>
@@ -34,13 +34,13 @@
                         <small>Penilaian</small>
                     </div>
                     <div class="box-body row">
-                    <?php foreach ($getKriteria as $i => $d) { ?>
-                        <div class="form-group col-md-4">
-                            <label>C<?= $i + 1?>: <?= $d->keterangan?></label>
-                            <input type="text" class="form-control" name="c<?= $i + 1 ?>" placeholder="Enter Nilai <?= $i + 1 ?>" required>
-                        </div>
-                    <?php } ?>
-                </div>
+                        <?php foreach ($getKriteria as $i => $d) { ?>
+                            <div class="form-group col-md-4">
+                                <label>C<?= $i + 1 ?>: <?= $d->keterangan ?></label>
+                                <input type="text" class="form-control" name="c<?= $i + 1 ?>" placeholder="Enter Nilai <?= $i + 1 ?>" required>
+                            </div>
+                        <?php } ?>
+                    </div>
 
                     <!-- <div class="form-group col-md-12">
                         <hr />
@@ -69,7 +69,17 @@
                 </div>
 
                 <div class="box-footer">
-                    <button type="submit" class="btn btn-primary">Simpan</button>
+                    <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Simpan</button>
+                </div>
+                <div id="myModal" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                                <p class="text-success">Sukses Menambah Data !</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </form>
         </div>

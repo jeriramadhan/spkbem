@@ -46,15 +46,34 @@
                             }
                             // echo '<td style="text-align:center">' . $v->c5 . '</td>';
                             echo '<td style="text-align:center">
-                            <a href="' . site_url('mahasiswa/update/' . $v->id) . '" style="text-decoration:none;color:black" data-toggle="tooltip" title="Update"><i class="fa fa-pencil"></i></a>&nbsp;
-                            <a href="' . site_url('mahasiswa/delete/' . $v->id) . '" style="text-decoration:none;color:black" data-toggle="tooltip" title="Delete"><i class="fa fa-trash"></i></a>';
+                            <a href="' . site_url('mahasiswa/update/' . $v->id) .
+                                '" style="text-decoration:none;color:black" data-toggle="tooltip" title="Update"><i class="fa fa-pencil"></i></a>&nbsp;
+                            <a data-toggle="modal" data-target="#delete' . $v->id . '" title="Delete"><i class="fa fa-trash"></i></a>';
                             echo '</tr>';
                         } ?>
                     </tbody>
                 </table>
-
             </div>
         </div>
+        <?php foreach ($data2 as $k => $v) {?>
+            <div id="delete<?php echo $v->id ?>" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>Anda Yakin Akan Menghapus Data <p class="text-danger"><?php echo $v->nama; ?> ?</p>
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="clearfix">
+
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Batal</button>
+                                <a class="btn btn-danger" href="<?= site_url('mahasiswa/delete/' . $v->id) ?>" role="button">Hapus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <?php } ?>
         <ul>
             <strong><i><u>Keterangan</u></i></strong>
             <br>

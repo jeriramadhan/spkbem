@@ -37,13 +37,32 @@
                             echo '<td style="text-align:center">' . $v->bobot . '</td>';
                             echo '<td style="text-align:center">
                             <a href="' . site_url('kriteria/updateKriteria/' . $v->id) . '" style="text-decoration:none;color:black" data-toggle="tooltip" title="Update"><i class="fa fa-pencil"></i></a>&nbsp;
-                            <a href="' . site_url('kriteria/deleteKriteria/' . $v->id) . '" style="text-decoration:none;color:black" data-toggle="tooltip" title="Delete"><i class="fa fa-trash"></i></a>';
+                            <a data-toggle="modal" data-target="#delete' . $v->id . '" title="Delete"><i class="fa fa-trash"></i></a>';
                             echo '</tr>';
                         } ?>
                     </tbody>
                 </table>
             </div>
         </div>
+        <?php foreach ($data as $k => $v) { ?>
+        <div id="delete<?php echo $v->id ?>" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>Anda Yakin Akan Menghapus Data <p class="text-danger"><?php echo $v->keterangan; ?> ?</p>
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="clearfix">
+
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Batal</button>
+                            <a class="btn btn-danger" href="<?= site_url('kriteria/deleteKriteria/' . $v->id) ?>" role="button">Hapus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php } ?>
         <strong><u>Keterangan</u></strong>
         <ul>
             <li>Jumlah nilai bobot<strong> HARUS </strong>berjumlah total bobot 1.</li>
