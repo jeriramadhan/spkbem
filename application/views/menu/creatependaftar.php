@@ -33,8 +33,12 @@
                             <input type="text" class="form-control" name="departemen" placeholder="Masukkan Departemen" required>
                         </div>
                         <div class="form-group col-md-4">
-                            <label>Jenis Kelamin</label>
-                            <input type="text" class="form-control" name="jenis_kelamin" placeholder="Masukkan Jenis Kelamin" required>
+                            <label for="jenis_kelamin">Jenis Kelamin</label>
+                            <br>
+                            <select class="form-control" id="jenis_kelamin" name="jenis_kelamin">
+                                <option value="L">Laki-Laki</option>
+                                <option value="P">Perempuan</option>
+                            </select>
                         </div>
                         <div class="form-group col-md-4">
                             <label>No Pengurus</label>

@@ -27,7 +27,13 @@
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
-
+    <style>
+        .dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
+        .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover,
+        .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+            display: none;
+        }
+    </style>
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
@@ -38,11 +44,11 @@
 
         <header class="main-header">
             <!-- Logo -->
-            <a href="<?= site_url('menu');?>"class="logo">
+            <a href="<?= site_url('menu'); ?>" class="logo">
                 <!-- mini logo for sidebar mini 50x50 pixels -->
                 <span class="logo-mini">PTIK</span>
                 <!-- logo for regular state and mobile devices -->
-                <span class="logo-lg">  BEMP PTIK-UNJ</span>
+                <span class="logo-lg"> BEMP PTIK-UNJ</span>
             </a>
             <!-- Header Navbar: style can be found in header.less -->
             <nav class="navbar navbar-static-top">
@@ -57,7 +63,7 @@
                 <div class="navbar-custom-menu">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="<?php echo site_url('login/logout')?>"><i class="fa fa-sign-out"></i> Keluar</a>
+                            <a href="<?php echo site_url('login/logout') ?>"><i class="fa fa-sign-out"></i> Keluar</a>
                         </li>
                     </ul>
                 </div>
