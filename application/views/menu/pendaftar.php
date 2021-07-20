@@ -45,7 +45,7 @@
                             echo '<td style="text-align:center">' . $resdata->no_pengurus . '</td>';
                             echo '<td style="text-align:center">' . $resdata->angkatan . '</td>';
                             echo '<td style="text-align:center">
-                            <a href="' . site_url('menu/updatePendaftar/' . $resdata->id) . '" style="text-decoration:none;color:black" data-toggle="tooltip" title="Update"><i class="fa fa-pencil"></i></a>&nbsp;
+                            <a href="' . site_url('menu/updatePendaftar/' . $resdata->id) . '" style="text-decoration:none;color:black" data-toggle="tooltip" title="Ubah"><i class="fa fa-pencil"></i></a>&nbsp;
                             <a data-toggle="modal" data-target="#delete' . $resdata->id . '" title="Delete"><i class="fa fa-trash"></i></a>';
                             echo '</tr>';
                         } ?>

@@ -43,9 +43,9 @@
                     })
                 $('.dataTables_filter').append($searchButton, $clearButton);
             },
-            "order": [
-                [1, 'asc']
-            ]
+            // "order": [
+            //     [1, 'asc']
+            // ]
         });
 
         t.on('order.dt search.dt', function() {
