@@ -1,11 +1,11 @@
 <div class="content-wrapper">
     <section class="content-header">
         <h1>
-            Perhitungan SAW
+            Perhitungan
         </h1>
         <ol class="breadcrumb">
             <li><a href="#">Mahasiswa</a></li>
-            <li class="active">View SAW</li>
+            <li class="active">Tampil Hasil</li>
         </ol>
     </section>
 
