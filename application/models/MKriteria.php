@@ -35,7 +35,7 @@ class MKriteria extends CI_Model
     $this->kriteria       = $_POST['kriteria'];
     $this->keterangan      = $_POST['keterangan'];
     $this->tipe   = $_POST['tipe'];
-    $this->bobot       = $_POST['bobot'];
+    $this->bobot       = $_POST['bobot']/100;
     $this->created_at = date('Y-m-d H:i:s');
     
     $this->db->trans_start();
@@ -48,7 +48,7 @@ class MKriteria extends CI_Model
     $this->kriteria       = $_POST['kriteria'];
     $this->keterangan      = $_POST['keterangan'];
     $this->tipe   = $_POST['tipe'];
-    $this->bobot       = $_POST['bobot'];
+    $this->bobot       = $_POST['bobot']/100;
     $this->updated_at = date('Y-m-d H:i:s');
     
     $this->db->trans_start();

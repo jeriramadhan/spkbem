@@ -34,7 +34,7 @@
                             echo '<td style="text-align:center">' . ($k + 1) . '</td>';
                             echo '<td style="text-align:center">' . $v->kriteria . '</td>';
                             echo '<td style="text-align:center">' . $v->keterangan . '</td>';
-                            echo '<td style="text-align:center">' . $v->bobot . '</td>';
+                            echo '<td style="text-align:center">' . $v->bobot*100 . '</td>';
                             echo '<td style="text-align:center">
                             <a href="' . site_url('kriteria/updateKriteria/' . $v->id) . '" style="text-decoration:none;color:black" data-toggle="tooltip" title="Ubah"><i class="fa fa-pencil"></i></a>&nbsp;
                             <a data-toggle="modal" data-target="#delete' . $v->id . '" title="Hapus"><i class="fa fa-trash"></i></a>';
@@ -65,7 +65,7 @@
         <?php } ?>
         <strong><u>Keterangan</u></strong>
         <ul>
-            <li>Jumlah nilai bobot<strong> HARUS </strong>berjumlah total bobot 1.</li>
+            <li>Jumlah nilai bobot<strong> HARUS </strong>berjumlah total bobot 100.</li>
         </ul>
     </section>
 </div>

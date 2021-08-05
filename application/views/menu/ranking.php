@@ -33,9 +33,9 @@
                             echo '<td style="text-align:center">' . ($k + 1) . '</td>';
                             echo '<td>' . $v['nama'] . '</td>';
                             foreach ($kriteria_count as $i => $data) {
-                                echo '<td style="text-align:center">' . $v[$data->kriteria] . '</td>';
+                                echo '<td style="text-align:center">' . $v[$data->kriteria]*100 . '</td>';
                             }
-                            echo '<td style="text-align:center">' . $v['total'] . '</td>';
+                            echo '<td style="text-align:center">' . $v['total']*100 . '</td>';
                             echo '<td style="text-align:center">' . $v['rank'] . '</td>';
                             echo '</tr>';
                         } ?>

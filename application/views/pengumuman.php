@@ -57,9 +57,9 @@
                                 echo '<td style="text-align:center"></td>';
                                 echo '<td>' . $v['nama'] . '</td>';
                                 foreach ($kriteria_count as $i => $data2) {
-                                    echo '<td style="text-align:center">' . $v[$data2->kriteria] . '</td>';
+                                    echo '<td style="text-align:center">' . $v[$data2->kriteria]*100 . '</td>';
                                 }
-                                echo '<td style="text-align:center">' . $v['total'] . '</td>';
+                                echo '<td style="text-align:center">' . $v['total']*100 . '</td>';
                                 echo '<td style="text-align:center">' . $v['rank'] . '</td>';
                                 echo '<td style="text-align:center">' . $v['departemen'] . '</td>';
                                 foreach ($data as $d) {

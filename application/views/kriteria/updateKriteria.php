@@ -35,7 +35,7 @@
                         </div>
                         <div class="form-group col-md-4">
                             <label>Bobot</label>
-                            <input type="text" class="form-control" name="bobot" value="<?= $data->bobot ?>" required>
+                            <input type="text" class="form-control" name="bobot" value="<?= ($data->bobot)*100 ?>" required>
                         </div>
                     </div>
                 </div>
